@@ -5,6 +5,7 @@ import Stores from './components/Stores'
 import Mycount from './components/Mycount'
 import Menu from './components/Menu'
 import More from './components/More'
+import Design from './components/Design'
 Vue.use(VueRouter)
 const router=new VueRouter({
 	routes:[
@@ -13,7 +14,8 @@ const router=new VueRouter({
 		{path:'/stores',component:Stores},
 		{path:'/mycount',component:Mycount},
 		{path:'/menu',component:Menu},
-		{path:'/more',component:More}
+		{path:'/more',component:More},
+		{path:'/design',component:Design}
 	]
 })
 export default router

@@ -61,7 +61,7 @@ a{
 	background: white;
 	color: white;
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	bottom: 0;
 	display: flex;
 	justify-content: space-around;

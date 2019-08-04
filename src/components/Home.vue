@@ -4,7 +4,7 @@
 		<photolunbo></photolunbo>
 		<div class="tmall">
 			<div><img src="../assets/lgimg/tmall-01.jpg" alt="" /></div>
-			<div class="tm_top"><img src="../assets/lgimg/tmall-02.jpg" alt="" /></div>
+			<div class="tm_top" @click="toDesign"><img src="../assets/lgimg/tmall-02.jpg" alt="" /></div>
 			<div class="tm_top"><img src="../assets/lgimg/tmall-03.jpg" alt="" /></div>
 		</div>
 		<div class="club">
@@ -83,7 +83,13 @@
 	export default{
 		components:{
 			photolunbo,titlelunbo
+		},
+		methods:{
+			toDesign(){
+				this.$router.push({path:'design'});
+			}
 		}
+			
 	}
 </script>
 

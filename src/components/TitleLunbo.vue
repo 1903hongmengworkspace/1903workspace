@@ -64,6 +64,8 @@
 	.home-two-slide .swiper-button-next,.home-two-slide .swiper-button-prev{
 		color: white;
 		outline: none;
+		width: 25px;
+		height: 25px;
 	}
 	.home-two-slide>div img{
 		width: 100%;
