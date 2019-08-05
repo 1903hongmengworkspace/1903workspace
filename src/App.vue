@@ -31,7 +31,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import merge from 'webpack-merge'
+
 export default {
   name: 'app',
   components: {
@@ -69,7 +69,7 @@ a{
 	background: white;
 	color: white;
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	bottom: 0;
 	display: flex;
 	justify-content: space-around;

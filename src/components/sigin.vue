@@ -5,7 +5,7 @@
 <input class="input" type="text"   placeholder="用户名或电子邮箱">
 <input class="input" type="text"   placeholder="密码">
 <div class="pws"><span class="iconfont" >&#xe624;</span></div>
- <p  class="next"><p class="box"></p>下次自动登录</p>
+ <div  class="next"><p class="box"></p> 下次自动登录  </div>
  <!-- <slide></slide> -->
  <!-- <div class="container-fluid">
 	<div class="form-row">
