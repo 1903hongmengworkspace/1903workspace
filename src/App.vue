@@ -9,7 +9,7 @@
 	    		<span class="iconfont">&#xe628;</span>
 	    		<span>门店</span>
 	    	</router-link>
-	    	<router-link to="/mycount">
+	    	<router-link to='/account'>
 	    		<span class="iconfont">&#xe642;</span>
 	    		<span>我的账户 </span>
 	    	</router-link>
@@ -31,16 +31,23 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-
+import merge from 'webpack-merge'
 export default {
   name: 'app',
   components: {
     
-  }
+  },
+  methods:{
+	  click(){
+		
+       consloe.log(1)
+	  }   
+}
 }
 </script>
 
 <style>
+
 html,body{
 	width: 100%;
 	height: 100%;
@@ -95,6 +102,7 @@ a{
   /*text-align: center;
   color: #2c3e50;*/
 }
+
 /* @font-face {
   font-family: 'iconfont';
   src: url('./assets/font/iconfont.eot');
