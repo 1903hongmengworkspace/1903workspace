@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
          <div class="reg">
          <h3><span>使用星巴克App进行注册</span></h3>
          <p class="des"><span>现在就下载</span><a href=""><span>星巴克App</span></a>
@@ -12,7 +12,8 @@
 </template>
 <script>
 export default {
-    
+     
+  
 }
 </script>
 <style>

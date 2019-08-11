@@ -32,6 +32,14 @@ module.exports={
                       '^api':''
                   } 
             },
+            '/open':{
+                target:"https://www.wx.qq.com/",
+                changeOrigin: true  
+            },
+            '/public':{
+                target:"https://dfp.arm.starbucks.com.cn/",
+                changeOrigin: true  
+            },
             '/union_sp_cap.css':{
                 target:"https://captcha.guard.qcloud.com/",
                 changeOrigin: true  

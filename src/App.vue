@@ -17,8 +17,8 @@
 	    		<span>我的账户 </span>
 	    	</router-link>
 	    	<router-link to="/menu">
-	    	    <span><img src="./assets/navimg/icon-menu.svg" alt=""></span>
-	  			<span><img src="./assets/navimg/icon-menu-active.svg" alt=""></span>
+	    	    <span><img src="./assets/navimg/icon-menu.svg" ></span>
+	  			<span><img src="./assets/navimg/icon-menu-active.svg" ></span>
 	    		<span>菜单</span>
 	    	</router-link>
 	    	<router-link to="/more">
@@ -36,7 +36,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-
+import axios from 'axios'
 export default {
   name: 'app',
   components: {
@@ -66,7 +66,7 @@ li{
 }
 a{
 	text-decoration: none;
-	color: black;
+	color: black !important;
 }
 .footer{
 	width: 100%;

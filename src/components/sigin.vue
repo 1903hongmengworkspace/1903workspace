@@ -1,11 +1,15 @@
 <template>
-    <div>
+    <div >
+       
        <div class="main"> 
 <form action="">
 <input class="input" type="text"   placeholder="用户名或电子邮箱">
-<input class="input" type="text"   placeholder="密码">
-<div class="pws"><span class="iconfont" >&#xe624;</span></div>
- <div  class="next"><p class="box"></p> 下次自动登录  </div>
+<input class="input" :type="show"   placeholder="密码">
+<div class="pws" @click="click">
+    <span class="iconfont" v-if='font'>&#xe616;</span>
+    <span class="iconfont"  v-if="!font">&#xe624;</span>
+</div>
+ <div  class="next" @click="bclick"><p class="box" :style="bgc"> <img src="../assets/icon-checked.svg" alt=""> </p> 下次自动登录  </div>
  <!-- <slide></slide> -->
  <!-- <div class="container-fluid">
 	<div class="form-row">
@@ -22,19 +26,51 @@
 
 <input  class="sigin" type="submit" name=" " id=" " placeholder="登录"> 
 </form>
-    </div>
+    </div> 
     </div>
 </template>
 
 
 <script >
-
+import axios from 'axios'
 export default {
   data(){
       return{
-          font:'&#xe624;'
+          font:true,
+           show:'text',
+           bgc:'background:#00A862',
+           bgcbool:true
       }
-  }
+
+      },
+      methods:{
+              click(){
+                  this.font=!this.font,
+                  this.show=this.font?'text':'password'
+              },
+              bclick(){
+                         this.bgcbool=!this.bgcbool,
+                         this.bgc=this.bgcbool?' background: #00A862;':' background:white;'
+              }
+      }
+      
+//     mounted(){
+//       axios.get("/account")
+//         .then((res)=>{
+//            let menu=res.data;
+//           //  let num=menu.indexOf("<div class='primary-mobile'>");
+//           // //  menu=menu.replace(` <!-- Javascript -->`,"<!--wzl Javascript -->");
+//           //  let nu=menu.indexOf("<!-- Javascript -->");
+//           // let meu=menu.slice(num,nu)
+//           //  menu=menu.replace(meu,'')
+//           //   menu=menu.replace(`<link rel='stylesheet' href='/assets/styles.css?201908042133'>`,"<link rel='stylesheet' href='/assets/styles.css'>")
+//           this.sigin=menu;
+//           console.log(1)
+ 
+//         })
+        
+//     }
+
 
 }
 // import "../jquery-1.11.3.js";
@@ -51,7 +87,9 @@ export default {
 // 	});
 
 </script>
-<style>
+<style scoped>
+
+
  /* @import url("../css/bootstrap.min.css");
 @import url("https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css");
 @import url("../disk/slidercaptcha.css"); */ 
@@ -137,6 +175,7 @@ font-size: 16px;
     display:inline-block;
     vertical-align: middle;
     font-size: 16px;
+    line-height: 36px;
 }
 .box{
     width: 32px;
@@ -145,6 +184,11 @@ font-size: 16px;
     border-radius: 15%;
     float: left;
     margin-left: 20px;
+   
+}
+.box>img{
+    margin-top:4px;
+    margin-left: 4px; 
 }
 .container-fluid{
     padding: 0;
