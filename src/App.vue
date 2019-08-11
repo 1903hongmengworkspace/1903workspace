@@ -2,23 +2,28 @@
   <div id="app">
   	<div class="footer">
 	  		<router-link to="/home">
-	  			<span class="iconfont">&#xe64e;</span>
+			    <span><img src="./assets/navimg/icon-home.svg" alt=""></span>
+	  			<span><img src="./assets/navimg/icon-home-active.svg" alt=""></span>
 	  			<span>主页</span>
 	  		</router-link>
 	    	<router-link to="/stores">
-	    		<span class="iconfont">&#xe628;</span>
+	    		 <span><img src="./assets/navimg/icon-stores.svg" alt=""></span>
+	  			<span><img src="./assets/navimg/icon-stores-active.svg" alt=""></span>
 	    		<span>门店</span>
 	    	</router-link>
 	    	<router-link to='/account'>
-	    		<span class="iconfont">&#xe642;</span>
+	    		 <span><img src="./assets/navimg/icon-account.svg" alt=""></span>
+	  			<span><img src="./assets/navimg/icon-account-active.svg" alt=""></span>
 	    		<span>我的账户 </span>
 	    	</router-link>
 	    	<router-link to="/menu">
-	    		<span class="iconfont">&#xe652;</span>
+	    	    <span><img src="./assets/navimg/icon-menu.svg" alt=""></span>
+	  			<span><img src="./assets/navimg/icon-menu-active.svg" alt=""></span>
 	    		<span>菜单</span>
 	    	</router-link>
 	    	<router-link to="/more">
-	    		<span class="iconfont">&#xe65c;</span>
+	    	    <span><img src="./assets/navimg/icon-more.svg" alt=""></span>
+	  			<span><img src="./assets/navimg/icon-more-active.svg" alt=""></span>
 	    		<span>更多</span>
 	    	</router-link>
 	  </div>
@@ -88,12 +93,23 @@ a{
 	height: 21px;
 	font-size: 0.65rem;
 	padding-top: 4px;
+	display: block;
 }
 .footer a span:nth-of-type(2){
+	display: none;
+}
+.footer a span:nth-of-type(3){
 	font-size: 0.35rem;
 }
 .footer .router-link-active{
 	color: #00A862;
+	
+}
+.footer .router-link-active>span:nth-of-type(2){
+display: block;
+}
+.footer .router-link-active>span:nth-of-type(1){
+display: none;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
