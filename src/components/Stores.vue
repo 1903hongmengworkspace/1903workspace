@@ -1,7 +1,4 @@
 <template>
-	<!--<div style="position: relative;">
-	    <input readonly type="text" data-toggle="city-picker">
-	</div>-->
 	<div class="address">
 		<div class="local">
 			<span class="iconfont">&#xe62d;</span><span class="city">{{city}}</span><span class="iconfont">&#xe695;</span>

@@ -21,7 +21,7 @@
 			<p>帮助中心</p>
 		</div>
 		<div class="nav3">
-			<span class="iconfont">&#xe642;</span><span>登录</span><span>注册</span>
+			<span class="iconfont">&#xe642;</span><span @click="login">登录</span><span @click="resgis">注册</span>
 		</div>
 		<div class="nav4">
 			<p><span>English</span><span>隐私政策</span><span>使用条款</span></p>
@@ -34,6 +34,16 @@
 </template>
 
 <script>
+	export default{
+		methods:{
+			resgis(){
+				this.$router.push({path:'/mycount/register'});
+			},
+			login(){
+				this.$router.push({path:'/mycount/sigin'});
+			},
+		}
+	}
 </script>
 
 <style scoped="scoped">

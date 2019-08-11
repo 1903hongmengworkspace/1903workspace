@@ -95,7 +95,7 @@ a{
   /*text-align: center;
   color: #2c3e50;*/
 }
-/* @font-face {
+ @font-face {
   font-family: 'iconfont';
   src: url('./assets/font/iconfont.eot');
   src: url('./assets/font/iconfont.eot?#iefix') format('embedded-opentype'),
@@ -103,7 +103,7 @@ a{
       url('./assets/font/iconfont.woff') format('woff'),
       url('./assets/font/iconfont.ttf') format('truetype'),
       url('./assets/font/iconfont.svg#iconfont') format('svg');
-} */
+} 
 .iconfont {
   font-family: "iconfont" !important;
   font-style: normal;

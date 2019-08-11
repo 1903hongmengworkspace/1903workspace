@@ -17,7 +17,7 @@ const router=new VueRouter({
 		{path:'/',redirect:'/home'},
 		{path:'/home',component:Home},
 		{path:'/stores',component:Stores},
-		{path:'/mycount/',component:Mycount ,children:[
+		{path:'/mycount',redirect:'/mycount/sigin',component:Mycount ,children:[
 			{path:'/mycount/sigin',component:Sigin},
 			{path:'/mycount/register',component:Register},
 			{path:'/mycount/starbucks-rewards',component:Starbucks}
