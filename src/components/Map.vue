@@ -13,6 +13,9 @@
 				<div class="gree"><img src="../assets/lgimg/icon-info-green.svg"/></div>
 			</div>
 		</div>
+		<div class="load" v-if="loading" style="width: 100%; height: 300px;">
+			<img src="../assets/lgimg/timg.gif"/>
+		</div>
 	</div>
 </template>
 
@@ -29,7 +32,8 @@
 				zooms:0,
 				radius:3400,
 				local:"",
-				showdata:[]
+				showdata:[],
+				loading:true
 			}
 		},
 		mounted() {
@@ -104,6 +108,7 @@
 					that.$emit("func",that.local)
 					axios.get("/api/stores/nearby?lat="+that.tude.lat+"&lon="+that.tude.lng+"&limit=30&locale=ZH&features=&radius=3407").then(res=>{
 						that.showdata=res.data.data
+						that.loading=false
 					})
 				}
 	
@@ -246,5 +251,8 @@
 	.map_show .mapdata .mapdata_nav .grey img{
 		width: 24px;
 		height: 32px;
+	}
+	.map_show .load img{
+		width: 100%;
 	}
 </style>

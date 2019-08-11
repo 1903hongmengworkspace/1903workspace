@@ -11,8 +11,8 @@
 			<h2 class="title">星享俱乐部</h2>
 			<p class="detail">开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。<a href="#">了解更多></a></p>
 			<p class="club_btn">
-				<span>注册</span>
-				<span>登录</span>
+				<span @click="resgis">注册</span>
+				<span @click="login">登录</span>
 			</p>
 			<div class="logo_svg">
 				<img src="../assets/lgimg/logo-01.svg" alt="" />
@@ -87,7 +87,13 @@
 		methods:{
 			toDesign(){
 				this.$router.push({path:'design'});
-			}
+			},
+			resgis(){
+				this.$router.push({path:'/mycount/register'});
+			},
+			login(){
+				this.$router.push({path:'/mycount/sigin'});
+			},
 		}
 			
 	}

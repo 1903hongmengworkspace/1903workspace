@@ -127,11 +127,11 @@ display: none;
       url('./assets/font/iconfont.woff') format('woff'),
       url('./assets/font/iconfont.ttf') format('truetype'),
       url('./assets/font/iconfont.svg#iconfont') format('svg');
-} */
+} 
 .iconfont {
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-</style>
+}*/
+ </style> 
